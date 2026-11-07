@@ -1,0 +1,212 @@
+[
+  {
+    "check": "Paper 1: brace balance",
+    "verdict": "PASS",
+    "detail": "2117 open / 2117 close",
+    "items": []
+  },
+  {
+    "check": "Paper 1: display-math pairing",
+    "verdict": "PASS",
+    "detail": "45 open / 45 close",
+    "items": []
+  },
+  {
+    "check": "Paper 1: equation tag uniqueness",
+    "verdict": "INVALID",
+    "detail": "no \\tag in this document",
+    "items": []
+  },
+  {
+    "check": "Paper 1: label/ref resolution",
+    "verdict": "INVALID",
+    "detail": "53 labels defined, 0 references: nothing to resolve",
+    "items": []
+  },
+  {
+    "check": "Paper 1: no '??' placeholder",
+    "verdict": "PASS",
+    "detail": "0 occurrences",
+    "items": []
+  },
+  {
+    "check": "Paper 1: float numbering apparatus",
+    "verdict": "INVALID",
+    "detail": "6 figure env with 6 \\caption; 18 table env, of which 7 carry a number (hand-typed title) and 11 carry none",
+    "items": []
+  },
+  {
+    "check": "Paper 1: float references",
+    "verdict": "PASS",
+    "detail": "every numbered float is named in the prose",
+    "items": []
+  },
+  {
+    "check": "Paper 1: float numbering",
+    "verdict": "PASS",
+    "detail": "Figure 1..6, Table 1..7, contiguous",
+    "items": []
+  },
+  {
+    "check": "Paper 1: has literature",
+    "verdict": "PASS",
+    "detail": "9 citation call(s)",
+    "items": []
+  },
+  {
+    "check": "Paper 1: citation coverage",
+    "verdict": "PASS",
+    "detail": "8 cited = 8 in bib, no orphans, no gaps",
+    "items": []
+  },
+  {
+    "check": "Paper 2: brace balance",
+    "verdict": "PASS",
+    "detail": "870 open / 870 close",
+    "items": []
+  },
+  {
+    "check": "Paper 2: display-math pairing",
+    "verdict": "PASS",
+    "detail": "51 open / 51 close",
+    "items": []
+  },
+  {
+    "check": "Paper 2: equation tag uniqueness",
+    "verdict": "PASS",
+    "detail": "45 tags, all unique",
+    "items": []
+  },
+  {
+    "check": "Paper 2: label/ref resolution",
+    "verdict": "INVALID",
+    "detail": "29 labels defined, 0 references: nothing to resolve",
+    "items": []
+  },
+  {
+    "check": "Paper 2: no '??' placeholder",
+    "verdict": "PASS",
+    "detail": "0 occurrences",
+    "items": []
+  },
+  {
+    "check": "Paper 2: float numbering apparatus",
+    "verdict": "INVALID",
+    "detail": "1 figure env with 1 \\caption; 3 table env, of which 0 carry a number (hand-typed title) and 3 carry none",
+    "items": []
+  },
+  {
+    "check": "Paper 2: float references",
+    "verdict": "PASS",
+    "detail": "every numbered float is named in the prose",
+    "items": []
+  },
+  {
+    "check": "Paper 2: float numbering",
+    "verdict": "PASS",
+    "detail": "Figure 1..1, contiguous",
+    "items": []
+  },
+  {
+    "check": "Paper 2: has literature",
+    "verdict": "PASS",
+    "detail": "7 citation call(s)",
+    "items": []
+  },
+  {
+    "check": "Paper 2: citation coverage",
+    "verdict": "PASS",
+    "detail": "7 cited = 7 in bib, no orphans, no gaps",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 00_Abstract.md: markdown math fences",
+    "verdict": "PASS",
+    "detail": "0 $$ (even)",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 00_Abstract.md: markdown table shape",
+    "verdict": "PASS",
+    "detail": "all blocks rectangular",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 00_Abstract.md: no placeholder text",
+    "verdict": "PASS",
+    "detail": "0 placeholders",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 01_Introduction.md: markdown math fences",
+    "verdict": "PASS",
+    "detail": "0 $$ (even)",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 01_Introduction.md: markdown table shape",
+    "verdict": "PASS",
+    "detail": "all blocks rectangular",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 01_Introduction.md: no placeholder text",
+    "verdict": "PASS",
+    "detail": "0 placeholders",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 02_Method.md: markdown math fences",
+    "verdict": "PASS",
+    "detail": "92 $$ (even)",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 02_Method.md: markdown table shape",
+    "verdict": "PASS",
+    "detail": "all blocks rectangular",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 02_Method.md: no placeholder text",
+    "verdict": "PASS",
+    "detail": "0 placeholders",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 03_Results.md: markdown math fences",
+    "verdict": "PASS",
+    "detail": "4 $$ (even)",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 03_Results.md: markdown table shape",
+    "verdict": "PASS",
+    "detail": "all blocks rectangular",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 03_Results.md: no placeholder text",
+    "verdict": "PASS",
+    "detail": "0 placeholders",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 04_Discussion.md: markdown math fences",
+    "verdict": "PASS",
+    "detail": "6 $$ (even)",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 04_Discussion.md: markdown table shape",
+    "verdict": "PASS",
+    "detail": "all blocks rectangular",
+    "items": []
+  },
+  {
+    "check": "Paper 2 / 04_Discussion.md: no placeholder text",
+    "verdict": "PASS",
+    "detail": "0 placeholders",
+    "items": []
+  }
+]

@@ -1,0 +1,12 @@
+swept,shock_len,shock_depth,duty_cycle_pct,a_extinct_cycle,b_alive_final,b_functional_final
+shock_len,1,0.85,4.35,108,50,0
+shock_len,2,0.85,8.7,107,50,0
+shock_len,3,0.85,13.04,106,50,0
+shock_len,4,0.85,17.39,101,50,0
+shock_len,6,0.85,26.09,51,50,0
+shock_len,8,0.85,34.78,48,50,0
+shock_len,10,0.85,43.48,31,50,0
+shock_depth,2,0.35,8.7,107,50,0
+shock_depth,2,0.5,8.7,107,50,0
+shock_depth,2,0.7,8.7,107,50,0
+shock_depth,2,0.85,8.7,107,50,0

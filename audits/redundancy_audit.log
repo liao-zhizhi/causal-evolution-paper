@@ -1,0 +1,76 @@
+==============================================================================
+cross-paper redundancy audit (Paper 1 vs Paper 2)
+==============================================================================
+bundle    : /home/liaozhizhi/桌面/Final_Review_Bundle
+units     : 358 paragraphs (P1) x 160 (P2); 597 sentences (P1) x 417 (P2)
+
+Similarity is the difflib ratio on normalised text: math removed (it is
+compared separately, in section D), citations and markup removed, case
+folded. Sections A and B rank by the longest common block, because a
+short stock phrase inside a long paragraph inflates the ratio without
+carrying content; section C ranks by the ratio itself, which is the
+'top ten' view, and is reported with that caveat.
+
+------------------------------------------------------------------------------
+A. paragraph level (normalised length > 30)
+------------------------------------------------------------------------------
+paragraph summary: 0 pair(s) reported, 0 SUBSTANTIVE
+
+------------------------------------------------------------------------------
+B. sentence level (normalised length > 15)
+------------------------------------------------------------------------------
+sentence summary: 0 pair(s) reported, 0 SUBSTANTIVE
+
+------------------------------------------------------------------------------
+C. top pairs by whole-string similarity (sentence level, up to 10)
+------------------------------------------------------------------------------
+This is the view the request asks for: the most alike sentence pairs in
+the two corpora, whatever their shared-run length. A pair can rank here
+and still carry no verbatim overlap longer than a phrase. If fewer than
+ten pairs clear the 0.25 floor, that is the finding: the corpora are more
+dissimilar than the top-ten format assumes.
+
+ 1. [SCAFFOLD   ] ratio 0.44  longest common run 30 chars
+    P1 01_Introduction.md
+    P2 02_Method.md
+    P1> This is Corollary 3, and it is a statement about a capacity the agent may be *given*: it says the escape is affordable but not free.
+    P2> The first proposition is what (D2.1) yields immediately, and it is a statement about measurable functions rather than about evaluation; the second is  ...
+    common> ", and it is a statement about"
+
+ 2. [SHARED-TERM] ratio 0.28  longest common run 35 chars
+    P1 03_Results.md
+    P2 03_Results.md
+    P1> Type-A never sleeps (I4), so the `r7` arm cannot strand; its survival at the horizon is the joint consequence of the channel and the absence of a dorm ...
+    P2> The measured consequence — a $15.8\%$ delivery advantage at the cycle where the other arm dies, and a $3.07\times$ advantage at the horizon — is large ...
+    common> "and the absence of a dormant phase"
+
+top-ten summary: 2 pair(s) above 0.25, 0 SUBSTANTIVE
+
+------------------------------------------------------------------------------
+D. displayed equations present in both papers (exact after normalisation)
+------------------------------------------------------------------------------
+formulas extracted: 363 (P1), 159 (P2); shared: 0 (0 exact, 0 near-identical at ratio >= 0.80)
+    none
+
+Shared equations are FORMULA-class by construction: they are the objects
+both papers reason about, and the second must cite the first for them.
+
+------------------------------------------------------------------------------
+E. verdict
+------------------------------------------------------------------------------
+category census over the reported pairs: FORMULA=0, TOP10:SCAFFOLD=1, TOP10:SHARED-TERM=1
+
+FORMULA rows are the shared equations (the charge account, the threshold,
+the ledger identity). They are the objects both papers reason about and
+Paper 2 cites Paper 1 for them; repetition is not a defect.
+BOILERPLATE rows are stock epistemic phrasing; the register is shared by
+both papers and by the field.
+SHARED-TERM rows are technical phrases both papers must use (the name of
+an ablation, a state). Not a defect.
+SUBSTANTIVE rows are the only ones that would count as self-plagiarism: a
+whole clause (>= 40 characters, >= 6 content words) repeated verbatim.
+There are none.
+
+redundancy audit: PASS
+==============================================================================
+

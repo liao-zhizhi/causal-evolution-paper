@@ -1,0 +1,17 @@
+# lean Core_Theorems.lean
+# toolchain: Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+# date: 2026-11-07T21:35:31+08:00
+
+'CoreTheorems.lemma4_threshold_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoreTheorems.lemma4_boundary_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoreTheorems.lemma4_reversed_direction_is_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ CoreTheorems.lemma4_reversed_direction_is_false._native.native_decide.ax_1_1,
+ CoreTheorems.lemma4_reversed_direction_is_false._native.native_decide.ax_1_2]
+'CoreTheorems.state_mutual_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CoreTheorems.mode_exclusive' does not depend on any axioms
+'CoreTheorems.verdict_exists_unique' does not depend on any axioms
+'CoreTheorems.verdict_discrete_collapse' depends on axioms: [propext]
+
+# exit=0

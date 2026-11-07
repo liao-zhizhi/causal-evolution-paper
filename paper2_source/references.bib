@@ -1,0 +1,110 @@
+% references.bib -- bibliography for "The Mathematical Limits of AI Reliability"
+%
+% Every entry below was resolved through an external index before it was
+% written here. DOIs went through api.crossref.org; arXiv identifiers went
+% through arxiv.org/abs, and the title and first author are the ones returned,
+% not the ones recalled. The audit is reproducible:
+%
+%     python3 audit_bib.py references.bib
+%
+% Two deliberate omissions, recorded so that they are not mistaken for
+% oversights:
+%
+%   * Fano's inequality is used in the prose of §2.8 only as a comparison of
+%     scales, never as a cited bound. Fano (1961) is a book whose coordinates
+%     no available index confirms, so it gets no entry rather than an invented
+%     page range.
+%   * Lyapunov (1892) is named nowhere in this paper. (It appears in the
+%     companion paper, which carries its own bib.)
+%
+% Cover & Thomas: the DOI 10.1002/047174882X is the second edition
+% (ISBN 978-0-471-24195-9). Crossref's date fields report the 2005 online
+% release; the printed second edition is dated 2006, which is the year used
+% here.
+% ---------------------------------------------------------------------------
+
+@book{pearl2009causality,
+  author    = {Pearl, Judea},
+  title     = {Causality},
+  edition   = {2nd},
+  publisher = {Cambridge University Press},
+  address   = {Cambridge},
+  year      = {2009},
+  doi       = {10.1017/CBO9780511803161}
+}
+
+@book{cover2006elements,
+  author    = {Cover, Thomas M. and Thomas, Joy A.},
+  title     = {Elements of Information Theory},
+  edition   = {2nd},
+  publisher = {Wiley},
+  address   = {Hoboken, NJ},
+  year      = {2006},
+  doi       = {10.1002/047174882X}
+}
+
+@article{parasuraman1997humans,
+  author  = {Parasuraman, Raja and Riley, Victor},
+  title   = {Humans and Automation: Use, Misuse, Disuse, Abuse},
+  journal = {Human Factors: The Journal of the Human Factors and Ergonomics
+             Society},
+  volume  = {39},
+  number  = {2},
+  pages   = {230--253},
+  year    = {1997},
+  doi     = {10.1518/001872097778543886}
+}
+
+@article{hullermeier2021aleatoric,
+  author  = {H{\"u}llermeier, Eyke and Waegeman, Willem},
+  title   = {Aleatoric and epistemic uncertainty in machine learning:
+             an introduction to concepts and methods},
+  journal = {Machine Learning},
+  volume  = {110},
+  number  = {3},
+  pages   = {457--506},
+  year    = {2021},
+  doi     = {10.1007/s10994-021-05946-3}
+}
+
+@misc{rafailov2023dpo,
+  author        = {Rafailov, Rafael and Sharma, Archit and Mitchell, Eric and
+                   Ermon, Stefano and Manning, Christopher D. and Finn, Chelsea},
+  title         = {Direct Preference Optimization: Your Language Model is
+                   Secretly a Reward Model},
+  year          = {2023},
+  eprint        = {2305.18290},
+  howpublished  = {arXiv:2305.18290},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2305.18290}
+}
+
+@misc{zheng2023judging,
+  author        = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and
+                   Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and
+                   Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P.
+                   and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  title         = {Judging {LLM}-as-a-Judge with {MT-Bench} and
+                   {Chatbot Arena}},
+  year          = {2023},
+  eprint        = {2306.05685},
+  howpublished  = {arXiv:2306.05685},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2306.05685}
+}
+
+@misc{jimenez2023swebench,
+  author        = {Jimenez, Carlos E. and Yang, John and Wettig, Alexander and
+                   Yao, Shunyu and Pei, Kexin and Press, Ofir and
+                   Narasimhan, Karthik},
+  title         = {{SWE}-bench: Can Language Models Resolve Real-World
+                   {GitHub} Issues?},
+  year          = {2023},
+  eprint        = {2310.06770},
+  howpublished  = {arXiv:2310.06770},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  url           = {https://arxiv.org/abs/2310.06770}
+}

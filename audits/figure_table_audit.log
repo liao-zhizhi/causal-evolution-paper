@@ -1,0 +1,150 @@
+==============================================================================
+figure and table audit
+==============================================================================
+bundle            : /home/liaozhizhi/桌面/Final_Review_Bundle
+data snapshot     : /home/liaozhizhi/桌面/Final_Review_Bundle/audits/data_snapshot
+checks            : 56   PASS: 56   FAIL: 0   INVALID: 0
+
+Lean4 covers the discrete algebra (Core_Theorems.lean). It cannot see a
+float, a caption, or a number copied from a CSV into a sentence. That is
+what C1-C7 check. C7 is the one this file exists for: the prose figure
+claims are recomputed from audits/data_snapshot/*.csv, not re-read.
+
+------------------------------------------------------------------------------
+Paper 1
+------------------------------------------------------------------------------
+[PASS   ] C1  figure numbering is contiguous and matches file ordinals
+            6 figure(s), numbered 1..6
+[PASS   ] C2  table numbering is contiguous within each series
+            main:7, A:3
+[PASS   ] C3  no reference to a figure or table that does not exist
+            no dangling reference
+[PASS   ] C4  no figure or table is displayed without being cited in prose
+            every float is cited
+[PASS   ] C5  each float is cited before it is displayed
+            all floats cited before display
+[PASS   ] C6  figures and tables are introduced in ascending numeric order
+            figures [1, 2, 3, 4, 5, 6]; main tables [1, 2, 3, 4, 5, 6, 7]; appendix tables [3, 1, 2]
+[PASS   ] C8  every float is cited in the argument, not only in a build note
+            all citations are scholarly
+[PASS   ] C7  prose value vs CSV — rho(99) shown in the event table
+[PASS   ] C7  prose value vs CSV — rho(100) shown in the event table
+[PASS   ] C7  prose value vs CSV — rho(300) named in the event table
+[PASS   ] C7  prose value vs CSV — Type-A extinction cycle (Fig. 6a)
+[PASS   ] C7  prose value vs CSV — Type-B stranding cycle (Fig. 6a)
+[PASS   ] C7  prose value vs CSV — cumulative delivered, Type-A (Fig. 6b)
+[PASS   ] C7  prose value vs CSV — cumulative recorded, Type-A (Fig. 6b)
+[PASS   ] C7  prose value vs CSV — ledger gap (Fig. 6b)
+[PASS   ] C7  prose value vs CSV — ledger gap as a percentage
+[PASS   ] C7  prose value vs CSV — Table 3 PASS Type-A
+[PASS   ] C7  prose value vs CSV — Table 3 FAIL Type-A (structural zero)
+[PASS   ] C7  prose value vs CSV — Table 3 INVALID Type-A
+[PASS   ] C7  prose value vs CSV — Table 3 NOT_RUN Type-B
+[PASS   ] C7  prose value vs CSV — the 708 INVALID split, shock part
+[PASS   ] C7  prose value vs CSV — the 708 INVALID split, drought part
+[PASS   ] C7  prose value vs CSV — 56.5% of the gap predates cycle 100
+[PASS   ] C7  prose value vs CSV — Table 2, 1% drift, A extinct
+[PASS   ] C7  prose value vs CSV — Table 2, 1% drift, B stranded
+[PASS   ] C7  prose value vs CSV — Table 2, 5% drift, B deadlocked
+[PASS   ] C7  prose value vs CSV — Table 2, 5% drift, B alive at 400
+[PASS   ] C7  prose value vs CSV — Table 4, theta=0.91 deadlocks
+[PASS   ] C7  prose value vs CSV — Table 4, theta=0.93 deadlocks
+[PASS   ] C7  prose value vs CSV — Table 4, theta=0.94 deadlocks
+[PASS   ] C7  prose value vs CSV — no Type-A deadlock at any theta
+[PASS   ] C7  prose value vs CSV — measured midpoint by interpolation
+[PASS   ] C7  prose value vs CSV — theta*(1) = 1 - 1/chi(1)
+[PASS   ] C7  prose value vs CSV — theta*(300) = 1 - 1/chi(300)
+[PASS   ] C7  prose value vs CSV — measured midpoint sits 0.09% above the terminal anchor
+[PASS   ] C7  prose value vs CSV — Table 5, self arm delivered
+[PASS   ] C7  prose value vs CSV — Table 5, r7 arm delivered
+[PASS   ] C7  prose value vs CSV — Table 5, r7 arm INVALID count
+[PASS   ] C7  prose value vs CSV — r7 delivers 3.07x the self arm
+[PASS   ] C7  prose value vs CSV — Table 6, peak gate strand cycle
+[PASS   ] C7  prose value vs CSV — Table 6, mean gate strand cycle
+[PASS   ] C7  prose value vs CSV — Table 6, legacy gate strand cycle
+[PASS   ] C7  prose value vs CSV — Table 6, legacy ratio 9.19
+[PASS   ] C7  prose value vs CSV — shock L=3 gives extinction at 106
+[PASS   ] C7  prose value vs CSV — shock L=6 gives extinction at 51
+[PASS   ] C7  prose value vs CSV — margin sweep extinction cycles
+[PASS   ] C7  prose value vs CSV — margin sweep last extinction
+[PASS   ] C7  prose value vs CSV — 279/107 = 2.607
+[PASS   ] C7  prose value vs CSV — seed-conditional midpoint 0.9335
+
+------------------------------------------------------------------------------
+Paper 2
+------------------------------------------------------------------------------
+[PASS   ] C1  figure numbering is contiguous and matches file ordinals
+            1 figure(s), numbered 1..1
+[PASS   ] C2  table numbering is contiguous within each series
+            main:0, A:0
+[PASS   ] C3  no reference to a figure or table that does not exist
+            no dangling reference
+[PASS   ] C4  no figure or table is displayed without being cited in prose
+            every float is cited
+[PASS   ] C5  each float is cited before it is displayed
+            all floats cited before display
+[PASS   ] C6  figures and tables are introduced in ascending numeric order
+            figures [1]; main tables []; appendix tables []
+[PASS   ] C8  every float is cited in the argument, not only in a build note
+            all citations are scholarly
+
+------------------------------------------------------------------------------
+C7 detail: every numeric claim anchored to a figure or table
+------------------------------------------------------------------------------
+claim                                                             doc          csv  ok
+rho(99) shown in the event table                               0.9342     0.934209  ok
+rho(100) shown in the event table                              0.9271     0.927078  ok
+rho(300) named in the event table                               0.673     0.673381  ok
+Type-A extinction cycle (Fig. 6a)                                 107          107  ok
+Type-B stranding cycle (Fig. 6a)                                  279          279  ok
+cumulative delivered, Type-A (Fig. 6b)                        7676.93      7676.93  ok
+cumulative recorded, Type-A (Fig. 6b)                         8871.71      8871.71  ok
+ledger gap (Fig. 6b)                                          1194.78      1194.78  ok
+ledger gap as a percentage                                     15.563      15.5633  ok
+Table 3 PASS Type-A                                              4550         4550  ok
+Table 3 FAIL Type-A (structural zero)                               0            0  ok
+Table 3 INVALID Type-A                                            708          708  ok
+Table 3 NOT_RUN Type-B                                           3250         3250  ok
+the 708 INVALID split, shock part                                 400          400  ok
+the 708 INVALID split, drought part                               308          308  ok
+56.5% of the gap predates cycle 100                              56.5      56.4869  ok
+Table 2, 1% drift, A extinct                                      107          107  ok
+Table 2, 1% drift, B stranded                                     279          279  ok
+Table 2, 5% drift, B deadlocked                                     4            4  ok
+Table 2, 5% drift, B alive at 400                                  46           46  ok
+Table 4, theta=0.91 deadlocks                                       2            2  ok
+Table 4, theta=0.93 deadlocks                                      19           19  ok
+Table 4, theta=0.94 deadlocks                                      43           43  ok
+no Type-A deadlock at any theta                                     0            0  ok
+measured midpoint by interpolation                             0.9325       0.9325  ok
+theta*(1) = 1 - 1/chi(1)                                       0.9437      0.94375  ok
+theta*(300) = 1 - 1/chi(300)                                   0.9317     0.931667  ok
+measured midpoint sits 0.09% above the terminal anchor           0.09    0.0893684  ok
+Table 5, self arm delivered                                   7676.93      7676.93  ok
+Table 5, r7 arm delivered                                    23602.92      23602.9  ok
+Table 5, r7 arm INVALID count                                    4950         4950  ok
+r7 delivers 3.07x the self arm                                   3.07      3.07453  ok
+Table 6, peak gate strand cycle                                   279          279  ok
+Table 6, mean gate strand cycle                                   233          233  ok
+Table 6, legacy gate strand cycle                                 983          983  ok
+Table 6, legacy ratio 9.19                                       9.19        9.187  ok
+shock L=3 gives extinction at 106                                 106          106  ok
+shock L=6 gives extinction at 51                                   51           51  ok
+margin sweep extinction cycles                                     69           69  ok
+margin sweep last extinction                                      108          108  ok
+279/107 = 2.607                                                 2.607      2.60748  ok
+seed-conditional midpoint 0.9335                               0.9335     0.933509  ok
+
+Tolerance: 5e-4 absolute for four-significant-figure prose, 5e-5 for
+derived anchors quoted to four decimals, exact for integer counts. A
+rounding of the last printed digit is not a mismatch; a factor of ten is.
+
+------------------------------------------------------------------------------
+notes
+------------------------------------------------------------------------------
+  Paper 1: appendix tables are forward-referenced out of order: [3, 1, 2] (legal, but the first appendix mention is Table A.3)
+
+
+figure/table audit: 56 PASS / 0 FAIL / 0 INVALID
+==============================================================================
+

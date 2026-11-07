@@ -1,0 +1,66 @@
+==============================================================================
+Lean4 verification
+==============================================================================
+file        : Formal_Verification/Core_Theorems.lean
+toolchain   : Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+command     : lean Core_Theorems.lean   (run in Formal_Verification/)
+exit status : 0
+errors      : 0
+warnings    : 0
+sorryAx     : 0
+sorry decls  : 0
+
+Scope. This file is a narrowing, not a summary: it checks the discrete
+and algebraic facts the argument rests on, not the differential
+equations, the lognormal order statistics or the simulation. It also
+cannot see a figure, a caption, or a number copied from a CSV into a
+sentence; those are checked by audits/figure_table_audit.py (C1-C7).
+
+-------------- declarations in the file ------------------------------
+  105:theorem one_sub_pos {theta : Rat} (h : theta < 1) : 0 < 1 - theta := by
+  112:theorem one_sub_inv (chi : Rat) (h : chi ≠ 0) : 1 - 1 / chi = (chi - 1) / chi := by
+  117:theorem mul_one_sub (chi theta : Rat) : chi * (1 - theta) = chi - chi * theta := by
+  127:theorem lemma4_threshold_equivalence {chi theta : Rat} (hc : 0 < chi)
+  141:theorem lemma4_boundary_crossing {chi theta : Rat} (hc : 0 < chi)
+  160:theorem lemma4_reversed_direction_is_false :
+  200:def canWake (c : Cell) : Prop := c.thetaWake ≤ c.charge
+  203:def mustSleep (c : Cell) : Prop := c.charge ≤ c.thetaDorm
+  208:theorem state_mutual_exclusion (c : Cell) : ¬ (canWake c ∧ mustSleep c) := by
+  216:def step (c : Cell) (prior : Mode) : Mode :=
+  223:theorem mode_exclusive (c : Cell) (prior : Mode) :
+  232:theorem step_deterministic (c : Cell) (prior : Mode) :
+  239:theorem band_is_memory (c : Cell) (hlo : c.thetaDorm < c.charge)
+  247:theorem active_stays_active_in_band (c : Cell)
+  292:def classify (w : Witness) : Verdict :=
+  300:theorem verdict_total (w : Witness) :
+  306:theorem verdict_deterministic (w : Witness) (v v' : Verdict)
+  316:theorem verdict_exists_unique (w : Witness) :
+  321:theorem verdicts_distinct :
+  330:theorem verdict_surjective (v : Verdict) : ∃ w : Witness, classify w = v := by
+  346:theorem verdict_collapse_is_a_step (w : Witness) (ha : w.attempted = true) :
+  364:theorem verdict_discrete_collapse :
+  379:theorem verdict_fail_vs_invalid (w : Witness) (ha : w.attempted = true)
+
+-------------- #print axioms output ----------------------------------
+  'CoreTheorems.lemma4_threshold_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'CoreTheorems.lemma4_boundary_crossing' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'CoreTheorems.lemma4_reversed_direction_is_false' depends on axioms: [propext,
+   Classical.choice,
+   Quot.sound,
+   CoreTheorems.lemma4_reversed_direction_is_false._native.native_decide.ax_1_1,
+   CoreTheorems.lemma4_reversed_direction_is_false._native.native_decide.ax_1_2]
+  'CoreTheorems.state_mutual_exclusion' depends on axioms: [propext, Classical.choice, Quot.sound]
+  'CoreTheorems.mode_exclusive' does not depend on any axioms
+  'CoreTheorems.verdict_exists_unique' does not depend on any axioms
+  'CoreTheorems.verdict_discrete_collapse' depends on axioms: [propext]
+
+-------------- conclusion -------------------------------------------
+  PASS: 0 errors, 0 warnings, 0 sorry.
+
+  Every axiom reported above is a Lean kernel axiom (propext,
+  Classical.choice, Quot.sound) or a native_decide certificate. None
+  is sorryAx, so no proof is unfinished. The claims are proved, not
+  assumed — but only the claims in this file. Theorem 1 of the paper
+  is analysed, not formalised: its differential part has no Lean
+  counterpart and is argued in prose.
+==============================================================================

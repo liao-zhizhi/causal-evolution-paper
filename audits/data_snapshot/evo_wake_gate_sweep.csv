@@ -1,0 +1,4 @@
+wake_gate,signal_unit,level_unit,b_strand_cycle,a_extinct_cycle,lifetime_ratio,b_deadlock_final
+peak,peak,peak,279,107,2.607,0
+mean,mean,mean,233,107,2.178,0
+legacy,peak,mean,983,107,9.187,0

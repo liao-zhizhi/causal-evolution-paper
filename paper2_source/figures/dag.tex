@@ -1,0 +1,23 @@
+% The causal graph of Section 2.5. The edge that is missing is the theorem.
+\begin{tikzpicture}[
+  >=stealth,
+  state/.style={circle,draw,inner sep=1.5pt,minimum size=8mm,font=\small},
+  note/.style={draw=none,inner sep=2pt,font=\scriptsize}
+]
+  \node[state] (U)  at (0.00, 0.00) {$U$};
+  \node[state] (T)  at (-1.70,-1.45) {$T$};
+  \node[state] (O)  at (1.70,-1.45) {$O$};
+  \node[state] (V)  at (3.55,-1.45) {$V$};
+  \node[state] (Pi) at (3.55, 0.10) {$\Pi$};
+  \node[state] (W)  at (-1.70,-2.90) {$W$};
+
+  \draw[->] (U) -- (T);
+  \draw[->] (U) -- (O);
+  \draw[->] (O) -- (V);
+  \draw[->] (Pi) -- (V);
+  \draw[->] (T) -- (W);
+
+  \node[note, below=1mm of O] {shared channel};
+  \node[note, right=1mm of V] {verdict};
+  \node[note, below=1mm of W] {witness};
+\end{tikzpicture}

@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{cover2006elements}
+Thomas~M. Cover and Joy~A. Thomas.
+\newblock {\em Elements of Information Theory}.
+\newblock Wiley, Hoboken, NJ, 2nd edition, 2006.
+
+\bibitem{hullermeier2021aleatoric}
+Eyke H{\"u}llermeier and Willem Waegeman.
+\newblock Aleatoric and epistemic uncertainty in machine learning: an introduction to concepts and methods.
+\newblock {\em Machine Learning}, 110(3):457--506, 2021.
+
+\bibitem{jimenez2023swebench}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik Narasimhan.
+\newblock {SWE}-bench: Can language models resolve real-world {GitHub} issues?
+\newblock arXiv:2310.06770, 2023.
+
+\bibitem{parasuraman1997humans}
+Raja Parasuraman and Victor Riley.
+\newblock Humans and automation: Use, misuse, disuse, abuse.
+\newblock {\em Human Factors: The Journal of the Human Factors and Ergonomics Society}, 39(2):230--253, 1997.
+
+\bibitem{pearl2009causality}
+Judea Pearl.
+\newblock {\em Causality}.
+\newblock Cambridge University Press, Cambridge, 2nd edition, 2009.
+
+\bibitem{rafailov2023dpo}
+Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher~D. Manning, and Chelsea Finn.
+\newblock Direct preference optimization: Your language model is secretly a reward model.
+\newblock arXiv:2305.18290, 2023.
+
+\bibitem{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E. Gonzalez, and Ion Stoica.
+\newblock Judging {LLM}-as-a-judge with {MT-Bench} and {Chatbot Arena}.
+\newblock arXiv:2306.05685, 2023.
+
+\end{thebibliography}

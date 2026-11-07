@@ -1,0 +1,152 @@
+% references.bib
+%
+% Every entry here has been checked against an external index, and the check is
+% recorded in `CITATION_AUDIT.csv` (classical sources) and
+% `AI_LITERATURE_CANDIDATES.md` (2023-2025 literature). Four rules governed what
+% was allowed in:
+%
+%   1. No field is written from memory when an API returned a value for it.
+%      Where memory and the API disagreed the API won, and the disagreement is
+%      recorded in the audit file. The `author` field of madaan2023selfrefine is
+%      the case in point: recall had a different last author entirely.
+%   2. A work whose coordinates could not be verified gets no entry. Lyapunov
+%      1892 is named in the prose as a classical ingredient and deliberately has
+%      no entry: Crossref, OpenAlex and Semantic Scholar return only later
+%      reprints and commentaries, so a volume and page range would have been
+%      invented.
+%   3. arXiv-only entries use the misc type with eprint fields. Their conference
+%      placement (NeurIPS, ICLR) is widely reported but was not verified against
+%      proceedings metadata, and an unverified booktitle is the exact failure
+%      this file exists to avoid.
+%   4. Explanatory text lives in these comments, never in a `note` field. A note
+%      is typeset into the bibliography, which would put internal audit
+%      commentary in front of a reviewer.
+%
+% Bibliographic notes, for the record:
+%
+%   atkinson1968 -- single author per Crossref, PubMed (PMID 4972613) and
+%     OpenAlex. The repository's older index listed "Atkinson & Walton,
+%     J. Biol. Chem.", which conflates this paper with Atkinson & Walton,
+%     J. Biol. Chem. 240:757-763 (1965), on E. coli phosphofructokinase.
+%
+%   johnson2011michaelis -- cited instead of Michaelis & Menten 1913
+%     (Biochem. Z. 49:333-369), whose coordinates no available index confirms.
+%     This is the DOI-resolvable English translation of the same paper.
+%
+%   vanderpol1926 -- title as printed; Crossref stores it behind the article
+%     number "LXXXVIII.", which is the journal's numbering, not the title.
+%
+% ---------------------------------------------------------------------------
+% Classical sources
+% ---------------------------------------------------------------------------
+
+@article{atkinson1968,
+  author  = {Atkinson, Daniel E.},
+  title   = {Energy charge of the adenylate pool as a regulatory parameter.
+             {Interaction} with feedback modifiers},
+  journal = {Biochemistry},
+  volume  = {7},
+  number  = {11},
+  pages   = {4030--4034},
+  year    = {1968},
+  doi     = {10.1021/bi00851a033}
+}
+
+@article{vanderpol1926,
+  author  = {van der Pol, Balthasar},
+  title   = {On ``relaxation-oscillations''},
+  journal = {The London, Edinburgh, and Dublin Philosophical Magazine and
+             Journal of Science},
+  volume  = {2},
+  number  = {11},
+  pages   = {978--992},
+  year    = {1926},
+  doi     = {10.1080/14786442608564127}
+}
+
+@article{johnson2011michaelis,
+  author  = {Johnson, Kenneth A. and Goody, Roger S.},
+  title   = {The original {Michaelis} constant: Translation of the 1913
+             {Michaelis--Menten} paper},
+  journal = {Biochemistry},
+  volume  = {50},
+  number  = {39},
+  pages   = {8264--8269},
+  year    = {2011},
+  doi     = {10.1021/bi201284u}
+}
+
+% ---------------------------------------------------------------------------
+% Agent and evaluation literature (2023-2025). All five identifiers were
+% resolved through the arXiv Atom API; titles matched exactly and each first
+% author was found in the returned author list. The author lists below are the
+% returned ones, not the recalled ones.
+% ---------------------------------------------------------------------------
+
+@misc{zheng2023judging,
+  author        = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and
+                   Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and
+                   Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P.
+                   and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  title         = {Judging {LLM}-as-a-Judge with {MT-Bench} and
+                   {Chatbot Arena}},
+  year          = {2023},
+  eprint        = {2306.05685},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2306.05685}
+}
+
+@misc{huang2023cannot,
+  author        = {Huang, Jie and Chen, Xinyun and Mishra, Swaroop and
+                   Zheng, Huaixiu Steven and Yu, Adams Wei and Song, Xinying
+                   and Zhou, Denny},
+  title         = {Large Language Models Cannot Self-Correct Reasoning Yet},
+  year          = {2023},
+  eprint        = {2310.01798},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2310.01798}
+}
+
+@misc{madaan2023selfrefine,
+  author        = {Madaan, Aman and Tandon, Niket and Gupta, Prakhar and
+                   Hallinan, Skyler and Gao, Luyu and Wiegreffe, Sarah and
+                   Alon, Uri and Dziri, Nouha and Prabhumoye, Shrimai and
+                   Yang, Yiming and Gupta, Shashank and Majumder, Bodhisattwa
+                   Prasad and Hermann, Katherine and Welleck, Sean and
+                   Yazdanbakhsh, Amir and Clark, Peter},
+  title         = {Self-Refine: Iterative Refinement with Self-Feedback},
+  year          = {2023},
+  eprint        = {2303.17651},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2303.17651}
+}
+
+@misc{jimenez2023swebench,
+  author        = {Jimenez, Carlos E. and Yang, John and Wettig, Alexander and
+                   Yao, Shunyu and Pei, Kexin and Press, Ofir and
+                   Narasimhan, Karthik},
+  title         = {{SWE}-bench: Can Language Models Resolve Real-World
+                   {GitHub} Issues?},
+  year          = {2023},
+  eprint        = {2310.06770},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.SE},
+  url           = {https://arxiv.org/abs/2310.06770}
+}
+
+@misc{cemri2025why,
+  author        = {Cemri, Mert and Pan, Melissa Z. and Yang, Shuyi and
+                   Agrawal, Lakshya A. and Chopra, Bhavya and Tiwari, Rishabh
+                   and Keutzer, Kurt and Parameswaran, Aditya and Klein, Dan
+                   and Ramchandran, Kannan and Zaharia, Matei and
+                   Gonzalez, Joseph E. and Stoica, Ion},
+  title         = {Why Do Multi-Agent {LLM} Systems Fail?},
+  year          = {2025},
+  eprint        = {2503.13657},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2503.13657}
+}

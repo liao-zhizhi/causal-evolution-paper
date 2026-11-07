@@ -1,0 +1,11 @@
+==============================================================================
+cross-reference audit | checks: 8   PASS: 8   FAIL: 0
+==============================================================================
+  PASS  Paper 1: named results resolve               15 defined; unresolved: none
+  PASS  Paper 1: equation numbers resolve            0 tags; unresolved: none
+  PASS  Paper 1: section references resolve          33 numbered sections; unresolved: none
+  PASS  Paper 1: every named result is used          orphans: none
+  PASS  Paper 2: named results resolve               17 defined; unresolved: none
+  PASS  Paper 2: equation numbers resolve            45 tags; unresolved: none
+  PASS  Paper 2: section references resolve          22 numbered sections; unresolved: none
+  PASS  Paper 2: every named result is used          orphans: none

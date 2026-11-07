@@ -1,0 +1,38 @@
+\begin{thebibliography}{1}
+
+\bibitem{atkinson1968}
+Daniel~E. Atkinson.
+\newblock Energy charge of the adenylate pool as a regulatory parameter. {Interaction} with feedback modifiers.
+\newblock {\em Biochemistry}, 7(11):4030--4034, 1968.
+
+\bibitem{cemri2025why}
+Mert Cemri, Melissa~Z. Pan, Shuyi Yang, Lakshya~A. Agrawal, Bhavya Chopra, Rishabh Tiwari, Kurt Keutzer, Aditya Parameswaran, Dan Klein, Kannan Ramchandran, Matei Zaharia, Joseph~E. Gonzalez, and Ion Stoica.
+\newblock Why do multi-agent {LLM} systems fail?, 2025.
+
+\bibitem{huang2023cannot}
+Jie Huang, Xinyun Chen, Swaroop Mishra, Huaixiu~Steven Zheng, Adams~Wei Yu, Xinying Song, and Denny Zhou.
+\newblock Large language models cannot self-correct reasoning yet, 2023.
+
+\bibitem{jimenez2023swebench}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik Narasimhan.
+\newblock {SWE}-bench: Can language models resolve real-world {GitHub} issues?, 2023.
+
+\bibitem{johnson2011michaelis}
+Kenneth~A. Johnson and Roger~S. Goody.
+\newblock The original {Michaelis} constant: Translation of the 1913 {Michaelis--Menten} paper.
+\newblock {\em Biochemistry}, 50(39):8264--8269, 2011.
+
+\bibitem{madaan2023selfrefine}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, Shashank Gupta, Bodhisattwa~Prasad Majumder, Katherine Hermann, Sean Welleck, Amir Yazdanbakhsh, and Peter Clark.
+\newblock Self-refine: Iterative refinement with self-feedback, 2023.
+
+\bibitem{vanderpol1926}
+Balthasar van~der Pol.
+\newblock On ``relaxation-oscillations''.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science}, 2(11):978--992, 1926.
+
+\bibitem{zheng2023judging}
+Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi~Lin, Zhuohan Li, Dacheng Li, Eric~P. Xing, Hao Zhang, Joseph~E. Gonzalez, and Ion Stoica.
+\newblock Judging {LLM}-as-a-judge with {MT-Bench} and {Chatbot Arena}, 2023.
+
+\end{thebibliography}

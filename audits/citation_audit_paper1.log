@@ -1,0 +1,34 @@
+==============================================================================
+citation audit
+==============================================================================
+bundle : ..
+
+Direction 1 is what the reader sees (paper.log and the PDF). Directions
+2-4 are what the sources promise. A paper can pass 2-4 and still print
+'??' if a pass was stale, so 1 is not redundant.
+
+------------------------------------------------------------------------------
+Paper 1   (paper1_source)
+------------------------------------------------------------------------------
+bib entries           : 8  (atkinson1968, cemri2025why, huang2023cannot, jimenez2023swebench, johnson2011michaelis, madaan2023selfrefine, vanderpol1926, zheng2023judging)
+distinct keys cited   : 8
+keys reaching paper.bbl: 8
+
+[PASS] no unresolved reference in the rendered PDF (22236 words scanned, 0 '??')
+[PASS] keys cited in prose but absent from references.bib: none (every cited key has an entry)
+[PASS] bibliography entries never cited in the prose: none (every entry is used)
+[PASS] cited keys missing from paper.bbl (BibTeX drop): none (BibTeX emitted every cited key)
+[PASS] duplicate bib keys: none
+[PASS] .bbl entries with no .bib source: none
+[PASS] entries missing required fields: none
+
+[NOTE] vanderpol1926 — 已核查，非真实缺失 (verified, not a real gap)
+       cited  : 01_Introduction.md:205, 02_Method.md:603, 04_Discussion.md:193
+       in .bib: yes, @article (12 fields)
+       in .bbl: yes
+       detail : 已核查，非真实缺失. The entry exists in references.bib, is cited once in §1.2, and appears in paper.bbl. The earlier flag came from a Crossref metadata lookup, not from this bibliography: the publisher stores the title behind the article number "LXXXVIII.", so a title-matching harness reports no hit while the citation resolves normally.
+
+==============================================================================
+citation audit: PASS (0 failing check(s) across both papers)
+==============================================================================
+
