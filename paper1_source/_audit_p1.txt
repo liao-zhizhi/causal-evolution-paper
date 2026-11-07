@@ -81,7 +81,7 @@ Boundaries of Grounding and Hysteresis in Complex
       seven cycles after the onset, from the upkeep rates alone.
           The algebraic skeleton — the threshold equivalence of Lemma 4, the mutual exclusion
       of the two modes, and the totality of the four-valued verdict — is machine-checked in Lean
-      4 (formal_verification/Core_Theorems.lean): 0 errors, 0 warnings, no sorry, with the
+      4 (Formal_Verification/Core_Theorems.lean): 0 errors, 0 warnings, no sorry, with the
       #print axioms receipts printed from the source rather than summarised here.
           We make no claim of universality. The contribution is a boundary that can be checked,
       three proofs that can be refuted, and a list of the assumptions that would have to hold for
@@ -376,25 +376,25 @@ state it in the same units we would use to test it.
 
 1.5.1 Formal verification artifacts
 Everything above that is algebraic rather than empirical has been machine-checked rather than
-argued. formal_verification/Core_Theorems.lean covers, in Lean 4 using core and Std
+argued. Formal_Verification/Core_Theorems.lean covers, in Lean 4 using core and Std
 only, the three discrete facts the argument rests on:
 
 
                                                   7
-  • The threshold equivalence of Lemma 4, which is the algebraic core of Theorem
-    1: chi < 1/(1-theta) and 1 - 1/chi < theta are the same statement, given 0 < chi
-    and theta < 1. The same section records that the reversal theta < 1 - 1/chi is the
-    escape condition rather than the deadlock condition, and exhibits a machine-checked coun-
-    terexample at the paper’s own operating point (chi = 17.7778, theta = 0.95) for the
-    reversed form.
-  • The mutual exclusion of the two modes, in both readings: the wake and dormancy
-    threshold predicates cannot both fire at one charge, and the transition function returns
-    one constructor. The second reading is a property of the machine rather than of the
-    charge, which is why the band theta_dorm < A < theta_wake carries memory instead
-    of behaving as a coin flip.
-  • The four-valued verdict as a discrete collapse: the map from a physical witness
-    to PASS / FAIL / INVALID / NOT_RUN is total, deterministic and surjective, and on the
-    delivered axis it is a step with no intermediate value.
+   • The threshold equivalence of Lemma 4, which is the algebraic core of Theorem
+     1: chi < 1/(1-theta) and 1 - 1/chi < theta are the same statement, given 0 < chi
+     and theta < 1. The same section records that the reversal theta < 1 - 1/chi is the
+     escape condition rather than the deadlock condition, and exhibits a machine-checked coun-
+     terexample at the paper’s own operating point (chi = 17.7778, theta = 0.95) for the
+     reversed form.
+   • The mutual exclusion of the two modes, in both readings: the wake and dormancy
+     threshold predicates cannot both fire at one charge, and the transition function returns
+     one constructor. The second reading is a property of the machine rather than of the
+     charge, which is why the band theta_dorm < A < theta_wake carries memory instead
+     of behaving as a coin flip.
+   • The four-valued verdict as a discrete collapse: the map from a physical witness
+     to PASS / FAIL / INVALID / NOT_RUN is total, deterministic and surjective, and on the
+     delivered axis it is a step with no intermediate value.
 
     The file compiles with zero errors, zero warnings and no sorry, and its axiom footprint is
 printed from the source by #print axioms rather than summarised here: two of the results name
@@ -407,6 +407,12 @@ does not formalise the differential equations, the order-statistic law or the si
 the discrete skeleton and nothing above it. Independent scrutiny and correction are welcome,
 and we would rather be told where the formalisation and the text disagree than have it inferred
 that they cannot.
+    Code Availability: The complete source code, Lean 4 formalization, and audit logs for
+this paper, as well as the companion study, are publicly available at https://github.com/
+liao-zhizhi/causal-evolution-paper. The preprint is archived at Zenodo (DOI: https:
+//doi.org/10.5281/zenodo.24032997). What the repository adds to this section is the part
+a reader cannot check by quotation: the audit scripts that produced every count in Section 3,
+their logs, and the build script that regenerates both PDFs from the Markdown sources.
 
 1.6 Relation to existing work
 The ingredients are classical and we claim no novelty for them individually: Michaelis–Menten
@@ -426,16 +432,14 @@ that score against a real artefact, rather than against a self-report, are the p
 of the witness requirement [4]. Multi-agent failures cluster in verification and in inter-agent
 misalignment [2], which is the taxonomy-level version of the case this paper isolates. The four-
 valued verdict is the audit-side counterpart: it refuses to fold “we did not look” and “it did not
-run” into “it failed”, because those three states assign responsibility to three different parties.
+
+                                                8
+run” into “it failed”, because those three states assign responsibility to three different parties.
     Two named ideas are used as objects of study rather than as citations. Goodhart’s ob-
 servation — that a measure ceases to be a good measure when it becomes a target — is the
 informal version of the A8/A10 mechanism: the agent optimises the recorded quantity, and
 the recording has been decoupled from delivery. The microbiology of persistence supplies the
-
-
-
-                                                8
-phenomenology of the dormant law (cheap upkeep, saturating recharge); we use the shape and
+phenomenology of the dormant law (cheap upkeep, saturating recharge); we use the shape and
 make no empirical claim about any organism.
 
 1.7 Organisation
@@ -468,13 +472,13 @@ Two naming conventions are fixed here and used without exception in Sections 2�
    M1 / M2. The dormant and active phases are governed by different equations, and the
 paper refers to them as separate models:
 
-label                   phase                      equation                     character
-M1                      dormant                    Ȧ = Y ϕv v(S)(1 − A) −      saturating, negative
-                                                   ϕdorm m0                     feedback (1 − A)
-                                                        m0                 
-M2                      active                     Ȧ =      (1 + ϵm )d − c     linear accounting, no
-                                                        D0
-                                                                                feedback
+label                    phase                      equation                     character
+M1                       dormant                    Ȧ = Y ϕv v(S)(1 − A) −      saturating, negative
+                                                    ϕdorm m0                     feedback (1 − A)
+                                                         m0                 
+M2                       active                     Ȧ =      (1 + ϵm )d − c     linear accounting, no
+                                                         D0
+                                                                                 feedback
 
 
     The earlier draft used “M1” for the active branch and “M2” for the dormant one. That
@@ -482,15 +486,15 @@ labelling is reversed here, and it is reversed because the substantive claim is 
 not the same model: the labels follow the order in which the results depend on them, not the
 order in which they appear in a cycle. Any citation of the earlier draft must be read with this
 swap.
-    Ax / A. Axioms are written Ax1–Ax9. Implicit assumptions inventoried by the audit are
+
+
+                                                9
+    Ax / A. Axioms are written Ax1–Ax9. Implicit assumptions inventoried by the audit are
 written A1–A28. The two numbering schemes are unrelated: A5 (an assumption about the active
 law) is realised by Ax3 (the axiom), not by Ax5 (the commitment policy). Table 1 is the only
 place where both numbering schemes appear in the same row; the verification report (§3.1)
 gives the full inventory, including the seventeen entries that are not load-bearing.
-
-
-                                               9
-    Quantities. C is the cycle-mean capacity (what an agent can deliver over a cycle); W is
+    Quantities. C is the cycle-mean capacity (what an agent can deliver over a cycle); W is
 the pulse peak (the rate at which a dormant agent charges). They differ by a factor of 1.74 in
 the reference scenario and are never interchanged. χ is the charging margin; χ0 is χ evaluated
 at W = Vmax , and f = W /Vmax . The two are routinely confused in the numbers, so we fix
@@ -532,15 +536,9 @@ Time is discrete, t ∈ N, one step per fed-batch cycle. The state of agent i is
                                     xi (t) = Ai , mi , ci , di , κi ,
     with domains
 
-
        Ai ∈ R,      mi ∈ {act, dorm, dead},         ci ∈ [0, C0,i ],    di ∈ [0, ci ],   κ i ∈ N0 .
-
     Two domain conventions are adopted deliberately and they constrain what can be claimed
 later.
-
-   1. A is not restricted to [0, 1]. Ax3 is linear and does not preserve the unit interval.
-      The implementation projects the upper bound (A ← min(A, 1)) and treats A ≤ 0 as an
-      absorbing event. A projection is not an invariant, so the model is an aﬀine system with an
 
                                                    10
 Figure 1: The L1 energy-charge account. (a) Growth, substrate depletion, dormancy and death, with
@@ -548,6 +546,9 @@ dormancy enabled (solid) and disabled (dashed). (b) Survival against maintenance
 against initial reserve. Open markers are censored, not death times.
 
 
+   1. A is not restricted to [0, 1]. Ax3 is linear and does not preserve the unit interval.
+      The implementation projects the upper bound (A ← min(A, 1)) and treats A ≤ 0 as an
+      absorbing event. A projection is not an invariant, so the model is an aﬀine system with an
       absorbing set, not a flow on a compact simplex. Lemma 1 is stated for the branch A < 1,
       which is the only branch Theorem 1 uses.
    2. A ≤ 0 is death, not equilibrium. Ax8 makes it irreversible. There is therefore no
@@ -584,10 +585,7 @@ on which Theorem 1’s deadlock verdicts are issued (I5).
                                                           D0
     Ax4 (delivery map). d = c · 1[C ≥ c] for Type-A (atomic); d = min(c, C) for Type-B
 (divisible).
-    Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at ) on PASS and
-at+1 = 0.95at on FAIL.
-    Ax6 (hysteresis switch; Type-B). For an agent that may enter dormancy (Type-B; I4
-excludes Type-A), act → dorm iff A < θdorm or Asleep consecutive cycles were judged FAIL;
+
 
 
                                                 11
@@ -597,6 +595,10 @@ substrate; open circles mark the analytic peak, the dashed curve the locus of ac
 same overload logic on the auditing side: mean sojourn time in an M/M/1 queue.
 
 
+    Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at ) on PASS and
+at+1 = 0.95at on FAIL.
+    Ax6 (hysteresis switch; Type-B). For an agent that may enter dormancy (Type-B; I4
+excludes Type-A), act → dorm iff A < θdorm or Asleep consecutive cycles were judged FAIL;
 dorm → act iff A ≥ θwake for κ consecutive cycles. The second entry condition is the verdict
 streak of §2.7, not a load ratio; the implementation keeps it as SLEEP_AFTER=2.
     Ax7 (environment). R is multiplied by 1 − ε every 10 cycles, so that R(t) = (1 − ε)⌊t/P ⌋ ;
@@ -619,21 +621,20 @@ supports.
 
                                          axiom / decision that
 ID         assumption in words           realises it                  result that fails if it is false
-A1         uptake is algebraic, not      Ax1                          χ undefined; Theorem 1 not
+A1         uptake is algebraic, not   Ax1                             χ undefined; Theorem 1 not
            stateful                                                   computable
-A5         the active phase is linear    Ax3 (M2)                     recovery to A ≈ 0.95; no
+A5         the active phase is linear Ax3 (M2)                        recovery to A ≈ 0.95; no
            with no feedback                                           extinction
-A7         M1 and M2 may be joined at    Ax6                          two theorems about two
+A7         M1 and M2 may be joined at Ax6                             two theorems about two
            the switch                                                 systems; the join is unjustified
-A8         failed work earns nothing     Ax3 with d = 0               extinction disappears
-A10        Type-A tasks are atomic       Ax4                          positive margin at cycle 100; no
-                                                                      step
-
 
 
                                                   12
                                          axiom / decision that
 ID        assumption in words            realises it               result that fails if it is false
+A8        failed work earns nothing      Ax3 with d = 0            extinction disappears
+A10       Type-A tasks are atomic        Ax4                       positive margin at cycle 100; no
+                                                                   step
 A13       no reproduction, inheritance   Ax9                       cohort survival, not evolution
           or variation
 A14       agents are independent         Ax9                       frequency dependence; a genuine
@@ -681,9 +682,6 @@ susceptibility χ = −∂s/∂g diverges there, and the behaviour survives N �
 strict definition used to reject the phase-transition reading in §3.5.
     D12 (functional). Alive and not stranded: m 6= dead ∧ ¬ST. This is the ordinate of
 panel 1 of the sandbox figure in §3.1.
-
-
-
 
                                                     13
 Figure 3: Hysteresis in a 2 h feeding regime. (a) Charge over time. (b) The (S, A) plane: the loop lives

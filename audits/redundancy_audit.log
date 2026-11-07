@@ -2,7 +2,7 @@
 cross-paper redundancy audit (Paper 1 vs Paper 2)
 ==============================================================================
 bundle    : /home/liaozhizhi/桌面/Final_Review_Bundle
-units     : 358 paragraphs (P1) x 160 (P2); 597 sentences (P1) x 417 (P2)
+units     : 362 paragraphs (P1) x 161 (P2); 611 sentences (P1) x 419 (P2)
 
 Similarity is the difflib ratio on normalised text: math removed (it is
 compared separately, in section D), citations and markup removed, case
@@ -49,7 +49,7 @@ top-ten summary: 2 pair(s) above 0.25, 0 SUBSTANTIVE
 ------------------------------------------------------------------------------
 D. displayed equations present in both papers (exact after normalisation)
 ------------------------------------------------------------------------------
-formulas extracted: 363 (P1), 159 (P2); shared: 0 (0 exact, 0 near-identical at ratio >= 0.80)
+formulas extracted: 368 (P1), 159 (P2); shared: 0 (0 exact, 0 near-identical at ratio >= 0.80)
     none
 
 Shared equations are FORMULA-class by construction: they are the objects

@@ -10,14 +10,14 @@ INVALID (5)
   Paper 2: float numbering apparatus                   1 figure env with 1 \caption; 3 table env, of which 0 carry a number (hand-typed title) and 3 carry none
 
 PASS (30)
-  Paper 1: brace balance                               2117 open / 2117 close
+  Paper 1: brace balance                               2154 open / 2154 close
   Paper 1: display-math pairing                        45 open / 45 close
   Paper 1: no '??' placeholder                         0 occurrences
   Paper 1: float references                            every numbered float is named in the prose
   Paper 1: float numbering                             Figure 1..6, Table 1..7, contiguous
   Paper 1: has literature                              9 citation call(s)
   Paper 1: citation coverage                           8 cited = 8 in bib, no orphans, no gaps
-  Paper 2: brace balance                               870 open / 870 close
+  Paper 2: brace balance                               873 open / 873 close
   Paper 2: display-math pairing                        51 open / 51 close
   Paper 2: equation tag uniqueness                     45 tags, all unique
   Paper 2: no '??' placeholder                         0 occurrences

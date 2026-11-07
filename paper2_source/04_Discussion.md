@@ -182,6 +182,15 @@ system whose evaluator reads the world directly — a controller with a force se
 in the loop — is not a counterexample but a witness, and Proposition 2 says so:
 it has the edge out of $T$ that the hypothesis excludes.
 
+**Data and Code Availability**: Every artifact behind this paper and its
+companion study --- the Lean 4 formalisation, the audit scripts, and the
+reproducibility record --- is in the public repository
+\url{https://github.com/liao-zhizhi/causal-evolution-paper}. The archived
+version of this preprint carries DOI \url{https://doi.org/10.5281/zenodo.24041061}.
+The repository is the evidence for the one claim in this section that is not a
+falsifier: that every bound stated here can be re-derived and every number
+re-measured from sources rather than from a summary of them.
+
 # 5. Conclusion
 
 A system that grades its own homework is not measuring its homework. This is

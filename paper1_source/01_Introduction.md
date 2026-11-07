@@ -331,7 +331,7 @@ failure mode, and we state it in the same units we would use to test it.
 ### 1.5.1 Formal verification artifacts
 
 Everything above that is *algebraic* rather than *empirical* has been
-machine-checked rather than argued. `formal_verification/Core_Theorems.lean`
+machine-checked rather than argued. `Formal_Verification/Core_Theorems.lean`
 covers, in Lean 4 using core and `Std` only, the three discrete facts the
 argument rests on:
 
@@ -368,6 +368,14 @@ equations, the order-statistic law or the simulation. It checks the discrete
 skeleton and nothing above it. Independent scrutiny and correction are
 welcome, and we would rather be told where the formalisation and the text
 disagree than have it inferred that they cannot.
+
+**Code Availability**: The complete source code, Lean 4 formalization, and audit
+logs for this paper, as well as the companion study, are publicly available at
+\url{https://github.com/liao-zhizhi/causal-evolution-paper}. The preprint is
+archived at Zenodo (DOI: \url{https://doi.org/10.5281/zenodo.24032997}). What the
+repository adds to this section is the part a reader cannot check by quotation:
+the audit scripts that produced every count in Section 3, their logs, and the
+build script that regenerates both PDFs from the Markdown sources.
 
 ## 1.6 Relation to existing work
 

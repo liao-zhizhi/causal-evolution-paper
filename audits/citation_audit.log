@@ -14,7 +14,7 @@ bib entries           : 8  (atkinson1968, cemri2025why, huang2023cannot, jimenez
 distinct keys cited   : 8
 keys reaching paper.bbl: 8
 
-[PASS] no unresolved reference in the rendered PDF (22236 words scanned, 0 '??')
+[PASS] no unresolved reference in the rendered PDF (22987 words scanned, 0 '??')
 [PASS] keys cited in prose but absent from references.bib: none (every cited key has an entry)
 [PASS] bibliography entries never cited in the prose: none (every entry is used)
 [PASS] cited keys missing from paper.bbl (BibTeX drop): none (BibTeX emitted every cited key)
@@ -23,7 +23,7 @@ keys reaching paper.bbl: 8
 [PASS] entries missing required fields: none
 
 [NOTE] vanderpol1926 — 已核查，非真实缺失 (verified, not a real gap)
-       cited  : 01_Introduction.md:205, 02_Method.md:603, 04_Discussion.md:193
+       cited  : 01_Introduction.md:205, 02_Method.md:652, 04_Discussion.md:197
        in .bib: yes, @article (12 fields)
        in .bbl: yes
        detail : 已核查，非真实缺失. The entry exists in references.bib, is cited once in §1.2, and appears in paper.bbl. The earlier flag came from a Crossref metadata lookup, not from this bibliography: the publisher stores the title behind the article number "LXXXVIII.", so a title-matching harness reports no hit while the citation resolves normally.
@@ -35,7 +35,7 @@ bib entries           : 7  (cover2006elements, hullermeier2021aleatoric, jimenez
 distinct keys cited   : 7
 keys reaching paper.bbl: 7
 
-[PASS] no unresolved reference in the rendered PDF (14426 words scanned, 0 '??')
+[PASS] no unresolved reference in the rendered PDF (14506 words scanned, 0 '??')
 [PASS] keys cited in prose but absent from references.bib: none (every cited key has an entry)
 [PASS] bibliography entries never cited in the prose: none (every entry is used)
 [PASS] cited keys missing from paper.bbl (BibTeX drop): none (BibTeX emitted every cited key)

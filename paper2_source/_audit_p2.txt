@@ -1225,6 +1225,13 @@ to know which, because any of those answers would be more interesting than the t
 what is not on this list: a system whose evaluator reads the world directly — a controller with
 a force sensor in the loop — is not a counterexample but a witness, and Proposition 2 says so:
 it has the edge out of T that the hypothesis excludes.
+    Data and Code Availability: Every artifact behind this paper and its companion study
+— the Lean 4 formalisation, the audit scripts, and the reproducibility record — is in the public
+repository https://github.com/liao-zhizhi/causal-evolution-paper. The archived ver-
+sion of this preprint carries DOI https://doi.org/10.5281/zenodo.24041061. The repository
+is the evidence for the one claim in this section that is not a falsifier: that every bound stated
+here can be re-derived and every number re-measured from sources rather than from a summary
+of them.
 
 
 5. Conclusion
@@ -1256,17 +1263,17 @@ is capped by what it can see, that the cap is computable, and that three things 
 coverage, a record rich enough to determine the outcome, and an added arrow. The first two
 are not improvements of the evaluator, and the third is not an optimisation of anything. The
 cap is not a prediction about the next model. It is a statement about which measurements
-could tell us anything, and it implies that most of the numbers now being reported cannot.
+
+
+                                                23
+could tell us anything, and it implies that most of the numbers now being reported cannot.
 
 References
 [1] Thomas M. Cover and Joy A. Thomas. Elements of Information Theory. Wiley, Hoboken, NJ, 2nd edition,
     2006.
 [2] Eyke Hüllermeier and Willem Waegeman. Aleatoric and epistemic uncertainty in machine learning: an
     introduction to concepts and methods. Machine Learning, 110(3):457–506, 2021.
-
-
-                                                  23
-[3] Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik
+[3] Carlos E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir Press, and Karthik
     Narasimhan. SWE-bench: Can language models resolve real-world GitHub issues? arXiv:2310.06770, 2023.
 [4] Raja Parasuraman and Victor Riley. Humans and automation: Use, misuse, disuse, abuse. Human Factors:
     The Journal of the Human Factors and Ergonomics Society, 39(2):230–253, 1997.

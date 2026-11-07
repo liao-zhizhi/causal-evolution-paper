@@ -1,7 +1,7 @@
 ==============================================================================
 glyph census of the rendered PDFs
 ==============================================================================
-bundle : ..
+bundle : .
 
 This tool lists what is printed and flags what a machine can decide is
 wrong. It does NOT decide whether a glyph means what the prose says it
@@ -11,42 +11,42 @@ an instruction to read, not a result. See the module docstring for the
 epsilon_n precedent in this bundle.
 
 ------------------------------------------------------------------------------
-Paper 1  (Paper1.pdf)  142,831 chars, 1,595 non-ASCII of 60 distinct glyphs
+Paper 1  (Paper1.pdf)  147,139 chars, 1,629 non-ASCII of 60 distinct glyphs
 ------------------------------------------------------------------------------
 
 A. inventory (frequency descending)
 
    glyph  code      freq  name
    ----------------------------------------------------------------------
-   −      U+2212    193  MINUS SIGN
-   χ      U+03C7    159  GREEK SMALL LETTER CHI
-   θ      U+03B8    122  GREEK SMALL LETTER THETA
-   —      U+2014     75  EM DASH
+   −      U+2212    194  MINUS SIGN
+   χ      U+03C7    160  GREEK SMALL LETTER CHI
+   θ      U+03B8    121  GREEK SMALL LETTER THETA
+   —      U+2014     81  EM DASH
    ϕ      U+03D5     67  GREEK PHI SYMBOL
-   §      U+00A7     58  SECTION SIGN
-   σ      U+03C3     51  GREEK SMALL LETTER SIGMA
-   ∞      U+221E     48  INFINITY
-   ’      U+2019     47  RIGHT SINGLE QUOTATION MARK
+   §      U+00A7     63  SECTION SIGN
+   ’      U+2019     53  RIGHT SINGLE QUOTATION MARK
+   σ      U+03C3     52  GREEK SMALL LETTER SIGMA
+   ∞      U+221E     49  INFINITY
    ∗      U+2217     45  ASTERISK OPERATOR
    ρ      U+03C1     41  GREEK SMALL LETTER RHO
    →      U+2192     39  RIGHTWARDS ARROW
    –      U+2013     39  EN DASH
    λ      U+03BB     37  GREEK SMALL LETTER LAMDA
    ϵ      U+03F5     36  GREEK LUNATE EPSILON SYMBOL
+   τ      U+03C4     36  GREEK SMALL LETTER TAU
    “      U+201C     35  LEFT DOUBLE QUOTATION MARK
    ”      U+201D     35  RIGHT DOUBLE QUOTATION MARK
-   ∈      U+2208     32  ELEMENT OF
-   τ      U+03C4     31  GREEK SMALL LETTER TAU
-   ≥      U+2265     31  GREATER-THAN OR EQUAL TO
-   ≤      U+2264     29  LESS-THAN OR EQUAL TO
-   ﬀ      U+FB00     26  LATIN SMALL LIGATURE FF
+   ∈      U+2208     35  ELEMENT OF
+   ≤      U+2264     30  LESS-THAN OR EQUAL TO
+   ≥      U+2265     30  GREATER-THAN OR EQUAL TO
+   ﬀ      U+FB00     27  LATIN SMALL LIGATURE FF
    ε      U+03B5     24  GREEK SMALL LETTER EPSILON
    •      U+2022     23  BULLET
+   κ      U+03BA     22  GREEK SMALL LETTER KAPPA
    δ      U+03B4     22  GREEK SMALL LETTER DELTA
    ∆      U+2206     21  INCREMENT
    ⇒      U+21D2     18  RIGHTWARDS DOUBLE ARROW
    □      U+25A1     18  WHITE SQUARE
-   κ      U+03BA     17  GREEK SMALL LETTER KAPPA
    ⇐      U+21D0     17  LEFTWARDS DOUBLE ARROW
    ∂      U+2202     16  PARTIAL DIFFERENTIAL
    Φ      U+03A6     15  GREEK CAPITAL LETTER PHI
@@ -82,54 +82,54 @@ A. inventory (frequency descending)
 B. grouped by class (read a glyph next to its kin)
 
    Greek letters (quantities and parameters)  [17]
-     χ  U+03C7  x159
+     χ  U+03C7  x160
        first @1973: dormant state is permanent if and only if χ < χmin = 1/(1 − θwake ), where χ(v) =
-     θ  U+03B8  x122
+     θ  U+03B8  x121
        first @1991: ermanent if and only if χ < χmin = 1/(1 − θwake ), where χ(v) = Y ϕv v/(m0 ϕdo
      ϕ  U+03D5  x67
        first @2022: n = 1/(1 − θwake ), where χ(v) = Y ϕv v/(m0 ϕdorm ) is the charging margin of
-     σ  U+03C3  x51
+     σ  U+03C3  x52
        first @3670: as signal-to-noise n∆drift /( 2σ) → ∞. It is unbiased and consistent, but
      ρ  U+03C1  x41
-       first @55775: . Proposition 2 (delivery onset). Let ρ(t) = C(t)/C0 and let the Type-A claim be
+       first @57980: . Proposition 2 (delivery onset). Let ρ(t) = C(t)/C0 and let the Type-A claim be
      λ  U+03BB  x37
-       first @117635: no such sequence exists. Setting. Let λ range over the model parameters (Vmax , K
+       first @122118: no such sequence exists. Setting. Let λ range over the model parameters (Vmax , K
      ϵ  U+03F5  x36
        first @7551: at the slower rate capacity < claim/(1 + ϵm ). In our shipped scenario those are 0.9
-     τ  U+03C4  x31
+     τ  U+03C4  x36
        first @12319: constant on the charging time scale τ = 1/(m0 ϕdorm χ). • H3 (wake rule). Wa
      ε  U+03B5  x24
        first @3619: . The cumulative potential Φn = n∆drift + ε0 − εn has signal-to-noise n∆dr
-     δ  U+03B4  x22
-       first @34640: one cannot silently substitute the other. δ is the upkeep deficit: maintenance owed b
-     κ  U+03BA  x17
+     κ  U+03BA  x22
        first @1887: assumption and a wake rule that requires κ consecutive qualifying cycles, the
+     δ  U+03B4  x22
+       first @35194: one cannot silently substitute the other. δ is the upkeep deficit: maintenance owed b
      Φ  U+03A6  x15
        first @3604: grow with √ n. The cumulative potential Φn = n∆drift + ε0 − εn has signa
      η  U+03B7  x11
-       first @81099: ividual margins factor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
+       first @85254: ividual margins factor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
      ω  U+03C9  x7
-       first @119794: gλn (t) = −bn + δn (t) with supt |δn | ≤ ωn , where ωn = supA∈K supt fλn (A, t) − gλ
+       first @124277: gλn (t) = −bn + δn (t) with supt |δn | ≤ ωn , where ωn = supA∈K supt fλn (A, t) − gλ
      α  U+03B1  x5
        first @3470: nt statistic has power exactly α against linear drift; sliding-window vari
      ξ  U+03BE  x4
-       first @81113: s factor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
+       first @85268: s factor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
      ζ  U+03B6  x4
-       first @81117: ctor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
+       first @85272: ctor as χi (t) = χ0 ρ(t)ηi with ηi = eξi −ζi ∼ LN(0,
 
    math operators and relations  [16]
-     −  U+2212  x193
+     −  U+2212  x194
        first @1989: permanent if and only if χ < χmin = 1/(1 − θwake ), where χ(v) = Y ϕv v/(m0 ϕ
-     ∞  U+221E  x48
+     ∞  U+221E  x49
        first @2368: nite maximum: supS χ(S) = 27.78 and supS A∞ = 0.964, attained at S = Ks Ki . D
      ∗  U+2217  x45
        first @15499: not a constant. It is the image of χ(t): θ∗ (t) = 1 − 1/χ(t). Under geometric drift t
-     ∈  U+2208  x32
+     ∈  U+2208  x35
        first @14740: boundary. In the reference scenario χ(t) ∈ [14.63, 17.78] throughout, so every deadl
-     ≥  U+2265  x31
-       first @12378: ). • H3 (wake rule). Waking requires A ≥ θwake for κ consecutive cycles. All t
-     ≤  U+2264  x29
+     ≤  U+2264  x30
        first @12195: frozen parameter: • H1 (entry). A(0) ≤ θwake when dormancy begins. • H2 (quas
+     ≥  U+2265  x30
+       first @12378: ). • H3 (wake rule). Waking requires A ≥ θwake for κ consecutive cycles. All t
      ∆  U+2206  x21
        first @3610: ith √ n. The cumulative potential Φn = n∆drift + ε0 − εn has signal-to-n
      ∂  U+2202  x16
@@ -137,19 +137,19 @@ B. grouped by class (read a glyph next to its kin)
      √  U+221A  x12
        first @2320: dal, the mar- gin has √ a finite maximum: supS χ(S) = 27.78 and s
      ≈  U+2248  x7
-       first @41589: Ax3 (M2) recovery to A ≈ 0.95; no with no feedback
+       first @43495: (M2) recovery to A ≈ 0.95; no with no feedback
      ∼  U+223C  x6
-       first @67139: o (τ = 3.125 cycles, relative error ∼ 10−4 ) but remains a condition. 3. The
+       first @71239: o (τ = 3.125 cycles, relative error ∼ 10−4 ) but remains a condition. 3. The
      ≲  U+2272  x3
-       first @75246: e comparison is defined is therefore 0.5% ≲ ε ≲ 4% per 10 cycles. 3.4 The ledger dis
+       first @79418: e comparison is defined is therefore 0.5% ≲ ε ≲ 4% per 10 cycles. 3.4 The ledger dis
      ≡  U+2261  x2
-       first @39614: visible). Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at )
+       first @41266: queue. Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at )
      ∃  U+2203  x1
-       first @44008: : ⇐⇒ mi = dorm ∧ limt→∞ Ai (t) < θwake ∧ ∃S > 0 : v(S) > 0. The third clause separat
+       first @45919: : ⇐⇒ mi = dorm ∧ limt→∞ Ai (t) < θwake ∧ ∃S > 0 : v(S) > 0. The third clause separat
      ∀  U+2200  x1
-       first @44180: D5 (stranding). STi : ⇐⇒ mi = dorm ∧ ∀t ≥ t0 : Wi (t) < wh , wh = 0.85 Wi (1). D
+       first @46091: D5 (stranding). STi : ⇐⇒ mi = dorm ∧ ∀t ≥ t0 : Wi (t) < wh , wh = 0.85 Wi (1). D
      ⊂  U+2282  x1
-       first @118431: n→∞ for some compact K ⊂ R with nonempty interior. Suppose also th
+       first @122914: n→∞ for some compact K ⊂ R with nonempty interior. Suppose also th
 
    arrows and logical connectives  [5]
      →  U+2192  x39
@@ -159,28 +159,28 @@ B. grouped by class (read a glyph next to its kin)
      ⇐  U+21D0  x17
        first @11528: 1 v DL ⇐⇒ A∞ < θwake ⇐⇒ χ < ⇐⇒
      ∧  U+2227  x4
-       first @43982: ry. D4 (deadlock). DLi : ⇐⇒ mi = dorm ∧ limt→∞ Ai (t) < θwake ∧ ∃S > 0 : v(S) > 0
+       first @45893: ry. D4 (deadlock). DLi : ⇐⇒ mi = dorm ∧ limt→∞ Ai (t) < θwake ∧ ∃S > 0 : v(S) > 0
      ←  U+2190  x1
-       first @36842: mplementation projects the upper bound (A ← min(A, 1)) and treats A ≤ 0 as an a
+       first @38492: mplementation projects the upper bound (A ← min(A, 1)) and treats A ≤ 0 as an a
 
    delimiters, radicals, floor/ceiling, QED  [3]
      □  U+25A1  x18
-       first @47347: d has no interior fixed point when d = 0. □ Corollary 1 (the 107-cycle extinction
+       first @49453: d has no interior fixed point when d = 0. □ Corollary 1 (the 107-cycle extinction
      ⌊  U+230A  x3
-       first @39895: ε every 10 cycles, so that R(t) = (1 − ε)⌊t/P ⌋ ; σ = σs on cycles t mod P ∈ {0, . .
+       first @41781: ε every 10 cycles, so that R(t) = (1 − ε)⌊t/P ⌋ ; σ = σs on cycles t mod P ∈ {0, . .
      ⌋  U+230B  x3
-       first @39900: ery 10 cycles, so that R(t) = (1 − ε)⌊t/P ⌋ ; σ = σs on cycles t mod P ∈ {0, . . . ,
+       first @41786: ery 10 cycles, so that R(t) = (1 − ε)⌊t/P ⌋ ; σ = σs on cycles t mod P ∈ {0, . . . ,
 
    combining marks (must have a base character)  [2]
      ̇  U+0307  x10
        first @11321: and checkable In a dormant state obeying Ȧ = Y ϕv v(S)(1 − A) − ϕdorm m0 , the asymp
      ̂  U+0302  x3
-       first @44872: (cumulative causal potential). Φn = S0 − Ŝn = k≤n (Ŝk−1 − Ŝk ). D10 (hysteresi
+       first @46783: (cumulative causal potential). Φn = S0 − Ŝn = k≤n (Ŝk−1 − Ŝk ). D10 (hysteresi
 
    typographic punctuation  [7]
-     —  U+2014  x75
+     —  U+2014  x81
        first @515: Hysteresis in Complex Systems Draft 1.0 — abstract. Every number quoted here is pro
-     ’  U+2019  x47
+     ’  U+2019  x53
        first @2850: nt, which is false in the range this paper’s sweep covers.
      –  U+2013  x39
        first @15432: nd only in the dormant phase (M1), with H1–H3. The boundary is not a constant. It
@@ -194,21 +194,21 @@ B. grouped by class (read a glyph next to its kin)
        first @8608: Theorem 1 gives the boundary; Corollary 3′ (§2.5) gives the ceiling on where the env
 
    Latin-1 supplement  [6]
-     §  U+00A7  x58
+     §  U+00A7  x63
        first @2506: of substrate — the pinned agent of §2.4 at θ = 0.99 is pinned for that reason
      ×  U+00D7  x10
        first @20782: 00 is 0.927C0 , its net flow is 1.15 × 0.927 − 0.93 = +0.137, and it never dies.
      ·  U+00B7  x7
-       first @39512: D0 Ax4 (delivery map). d = c · 1[C ≥ c] for Type-A (atomic); d = min(c,
+       first @40721: D0 Ax4 (delivery map). d = c · 1[C ≥ c] for Type-A (atomic); d = min(c,
      µ  U+00B5  x4
-       first @132720: = eξi −ζi , ρ(t) = µ(t), m0,i /m
+       first @137198: = eξi −ζi , ρ(t) = µ(t), m0,i /m
      ô  U+00F4  x1
-       first @40532: used for the quasi-static error (IR5); l’Hôpital and asymptotic expansion, used for t
+       first @42418: used for the quasi-static error (IR5); l’Hôpital and asymptotic expansion, used for t
      ¬  U+00AC  x1
-       first @45673: nal). Alive and not stranded: m 6= dead ∧ ¬ST. This is the ordinate of panel 1 of the
+       first @47584: nal). Alive and not stranded: m 6= dead ∧ ¬ST. This is the ordinate of panel 1 of the
 
    Latin ligatures  [1]
-     ﬀ  U+FB00  x26
+     ﬀ  U+FB00  x27
        first @3416: ctor with power one, and its limits. Any aﬀine-invariant statistic has pow
 
    CJK  [3]
@@ -234,17 +234,17 @@ C. hard defects (machine-decidable)
      廖  U+5ED6  x1  Zhizhi Liao (廖至智) Indep
      智  U+667A  x1  Zhizhi Liao (廖至智) Indepen
      至  U+81F3  x1  Zhizhi Liao (廖至智) Indepe
-     ≡  U+2261  x2  visible). Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at )
+     ≡  U+2261  x2  queue. Ax5 (commitment policy). cA ≡ D0 ; cB = a with at+1 = min(D0 , 1.05at )
 
 ------------------------------------------------------------------------------
-Paper 2  (Paper2.pdf)  90,040 chars, 806 non-ASCII of 48 distinct glyphs
+Paper 2  (Paper2.pdf)  90,598 chars, 808 non-ASCII of 48 distinct glyphs
 ------------------------------------------------------------------------------
 
 A. inventory (frequency descending)
 
    glyph  code      freq  name
    ----------------------------------------------------------------------
-   —      U+2014     96  EM DASH
+   —      U+2014     98  EM DASH
    Π      U+03A0     71  GREEK CAPITAL LETTER PI
    ′      U+2032     59  PRIME
    ’      U+2019     47  RIGHT SINGLE QUOTATION MARK
@@ -368,7 +368,7 @@ B. grouped by class (read a glyph next to its kin)
        first @34188: 1 P 1 P n t≤n Zt and Ŝn = n t≤n 1[Vϕ = PASS]. Then E
 
    typographic punctuation  [7]
-     —  U+2014  x96
+     —  U+2014  x98
        first @1549: η is large and the bound is silent — and there the verdict can and does correl
      ′  U+2032  x59
        first @6942: a coverage condition on the prior — (A2.2′ ), an empirical assumption we label as su
@@ -391,7 +391,7 @@ B. grouped by class (read a glyph next to its kin)
      ×  U+00D7  x6
        first @11935: rnel (S × A) × B(S) → [0, 1] v
      ü  U+00FC  x1
-       first @88784: ken, NJ, 2nd edition, 2006. [2] Eyke Hüllermeier and Willem Waegeman. Aleatoric a
+       first @89398: ken, NJ, 2nd edition, 2006. [2] Eyke Hüllermeier and Willem Waegeman. Aleatoric a
 
    Latin ligatures  [1]
      ﬀ  U+FB00  x9

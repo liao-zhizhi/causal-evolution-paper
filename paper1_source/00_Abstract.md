@@ -83,7 +83,7 @@ four to seven cycles after the onset, from the upkeep rates alone.
 
 The algebraic skeleton — the threshold equivalence of Lemma 4, the mutual
 exclusion of the two modes, and the totality of the four-valued verdict — is
-machine-checked in Lean 4 (`formal_verification/Core_Theorems.lean`): 0 errors,
+machine-checked in Lean 4 (`Formal_Verification/Core_Theorems.lean`): 0 errors,
 0 warnings, no `sorry`, with the `#print axioms` receipts printed from the
 source rather than summarised here.
 
