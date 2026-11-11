@@ -8,7 +8,7 @@ These are not seven parallel papers. They are one cognitive chain, from digital 
 - **The Physics of Emergence (Paper 4).** Fractal interfaces and bio-quantum decoherence: AI emergence as a mirage, and the demand for true physical grounding.
 - **The Limits and Faults (Papers 5–7).** Formalizing deadlock boundaries in causal dynamics (P5); proving the information-theoretic limit of self-evaluation \(I(V;T \mid O,\Pi)=0\) (P6); exposing the structural faults that appear when a software sidecar is applied to an embodied agent (P7).
 
-This repository holds the Lean 4 discrete skeleton, the audit logs, and the sources for Papers 5 and 6 (`paper1_source/`, `paper2_source/`). Paper 7 has not been deposited on Zenodo.
+This repository holds the Lean 4 discrete skeleton, the audit logs, and the sources for Papers 5 and 6 (`paper1_source/`, `paper2_source/`). Paper 7 is archived at Zenodo.
 
 > 📝 **Blog Post**: [Why Your AI Evaluator Is Structurally Blind (and how to mathematically prove it)](https://dev.to/liaozhizhi/why-your-ai-evaluator-is-structurally-blind-and-how-to-mathematically-prove-it-3mn0)
 >
@@ -27,7 +27,7 @@ Seven independent papers. Paper 4 uses the printed title on disk. Paper 6: cite 
 | 4 | Fractal Interfaces: A Quantitative Model of Cross-Scale Boundaries, Calibrated on Biological Quantum Coherence | [10.5281/zenodo.23949827](https://doi.org/10.5281/zenodo.23949827) | Why is AI emergence a strobing mirage? |
 | 5 | Causal Evolution Dynamics | [10.5281/zenodo.24032997](https://doi.org/10.5281/zenodo.24032997) | When does a system reach its deadlock boundary? |
 | 6 | The Mathematical Limits of AI Reliability | [10.5281/zenodo.24041060](https://doi.org/10.5281/zenodo.24041060) (v3: [24135951](https://doi.org/10.5281/zenodo.24135951)) | Why can't self-evaluation see the truth? |
-| 7 | The Physical Grounding Fault | unpublished | Why do software sidecars structurally fail in embodied agents? |
+| 7 | The Physical Grounding Fault | [10.5281/zenodo.24139787](https://doi.org/10.5281/zenodo.24139787) | Why do software sidecars structurally fail in embodied agents? |
 
 ## Verification
 
